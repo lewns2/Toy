@@ -27,4 +27,4 @@ json-server db.json --routes routes.json --port 8080
 
 ### 테스트 방안
 
-1. jest와 msw 모킹을 통한 API 테스트
+1. [jest와 msw 모킹을 통한 API 테스트](https://github.com/lewns2/Toy/blob/master/articles/msw.md)
