@@ -1,7 +1,7 @@
 {
-  "name": "kakao-enterprise",
+  "name": "sound-cloud",
   "version": "1.0.0",
-  "description": "kakao-enterprise-clone-with-vanilla-js",
+  "description": "sound-cloud-clone-with-vanilla-js",
   "main": "index.js",
   "repository": "https://github.com/lewns2/Toy",
   "author": "lewns2",
