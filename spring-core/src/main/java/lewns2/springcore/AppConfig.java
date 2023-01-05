@@ -2,6 +2,7 @@ package lewns2.springcore;
 
 import lewns2.springcore.discount.DiscountPolicy;
 import lewns2.springcore.discount.FixDiscountPolicy;
+import lewns2.springcore.discount.RateDiscountPolicy;
 import lewns2.springcore.member.MemberRepository;
 import lewns2.springcore.member.MemberService;
 import lewns2.springcore.member.MemberServiceImpl;
@@ -16,7 +17,7 @@ public class AppConfig {
     }
 
     private DiscountPolicy discountPolicy() {
-        return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
     }
 
     public MemberService memberService() {
