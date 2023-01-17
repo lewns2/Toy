@@ -2,7 +2,9 @@ package lewns2.springcore.discount;
 
 import lewns2.springcore.member.Grade;
 import lewns2.springcore.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;

@@ -3,7 +3,10 @@ package lewns2.springcore.order;
 import lewns2.springcore.discount.DiscountPolicy;
 import lewns2.springcore.member.Member;
 import lewns2.springcore.member.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService{
 
     // 회원 찾기
@@ -14,6 +17,7 @@ public class OrderServiceImpl implements OrderService{
     private final DiscountPolicy discountPolicy; // DIP 해결, 다만 구현체가 없어 누군가 대신 생성하고 주입해야한다. => 이를 위해 공연 기획자(AppConfig)가 필요하다.
 
     // 생성자 주입을 위한 생성자
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
