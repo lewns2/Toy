@@ -1,9 +1,11 @@
 package lewns2.springcore.order;
 
+import lewns2.springcore.annotation.MainDiscountPolicy;
 import lewns2.springcore.discount.DiscountPolicy;
 import lewns2.springcore.member.Member;
 import lewns2.springcore.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,7 +20,7 @@ public class OrderServiceImpl implements OrderService{
 
     // 생성자 주입을 위한 생성자
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }

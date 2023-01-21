@@ -1,10 +1,13 @@
 package lewns2.springcore.discount;
 
+import lewns2.springcore.annotation.MainDiscountPolicy;
 import lewns2.springcore.member.Grade;
 import lewns2.springcore.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
