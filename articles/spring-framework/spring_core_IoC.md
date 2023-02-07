@@ -37,7 +37,7 @@
 
 ### 스프링 컨테이너 생성 과정
 
-![IoC](./image/iocContainer.png)
+![Ioc](../image/iocContainer.png)
 
 1. 스프링 컨테이너 생성
    - 비어있는 스프링 컨테이너가 생성된다.

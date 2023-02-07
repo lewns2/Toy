@@ -49,7 +49,7 @@ API에 맞는 별도의 객체 DTO 클래스를 통해 request를 받는다. 달
 <br>
 
 DTO에 대해 더욱 상세한 내용은 아래 글들을 참고. <br>
-(DTO에 대하여)[https://github.com/lewns2/Toy/blob/master/articles/spring-framework/dto.md]
+[DTO에 대하여](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/dto.md)
 
 <br>
 
@@ -59,6 +59,6 @@ translation된 결과는 비즈니스 로직으로 전달된다. 이는 원하�
 통상 그렇게 할 때, DI(Dependency Injection)란 기법을 통해 컴포넌트의 호출을 처리하게 된다. <br>
 
 의존성 주입에 대한 내용은 아래 글을 참고. <br>
-(의존성 주입(DI)와 IoC 컨테이너)[https://github.com/lewns2/Toy/blob/master/articles/spring-framework/spring_core_IoC.md]
+[의존성 주입(DI)와 IoC 컨테이너](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/spring_core_IoC.md)
 
 <br>

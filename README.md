@@ -7,6 +7,7 @@ author: 김동현
 [01. 프론트엔드 테스트](#리액트-테스트-방법) <br>
 [02. Spring과 객체 지향](#spring) <br>
 [03. JavaScript](#javascript) <br>
+[04. Java](#java) <br>
 
 ## 프론트엔드에서의 테스트
 
@@ -46,7 +47,7 @@ author: 김동현
   - DTO
 
     - [DTO 개념, 사용 범위, 변환 위치](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/dto.md)
-    - [DTO 클래스를 만드는 다양한 방법 - 생성자, 빌더 패턴, 정적 팩토리 메서드](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/create_dto.md)
+    - [DTO와 엔티티 간 데이터 변환 방법 - 생성자, 빌더 패턴, 정적 팩토리 메서드, Mapper](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/create_dto.md)
 
   - IoC
     - [의존성 주입(DI)와 IoC 컨테이너](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/spring_core_IoC.md)
@@ -57,7 +58,7 @@ author: 김동현
 
 ## JavaScript
 
-관련 폴더 : [javascript](https://github.com/lewns2/Toy/tree/master/javascript)
+관련 폴더 : [javascript](https://github.com/lewns2/Toy/tree/master/articles/javascript)
 
 - 내용
   - 자바스크립트의 성장
