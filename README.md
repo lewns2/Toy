@@ -46,7 +46,7 @@ author: 김동현
   - DTO
 
     - [DTO 개념, 사용 범위, 변환 위치](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/dto.md)
-    - DTO 클래스를 만드는 다양한 방법 - 생성자, 빌더 패턴, 정적 팩토리 메서드
+    - [DTO 클래스를 만드는 다양한 방법 - 생성자, 빌더 패턴, 정적 팩토리 메서드](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/create_dto.md)
 
   - IoC
     - [의존성 주입(DI)와 IoC 컨테이너](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/spring_core_IoC.md)
@@ -68,3 +68,12 @@ author: 김동현
   - 스코프
   - 실행 컨텍스트
   - this
+
+## Java
+
+관련 폴더 : [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)
+
+- 내용
+  - 객체의 생성
+    - 정적 팩토리 메서드 패턴
+    - 빌더 패턴
