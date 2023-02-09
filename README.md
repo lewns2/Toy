@@ -76,5 +76,5 @@ author: 김동현
 
 - 내용
   - 객체의 생성
-    - 정적 팩토리 메서드 패턴
+    - [정적 팩토리 메서드 패턴](https://github.com/lewns2/Toy/blob/master/articles/java/static_factory_method.md)
     - 빌더 패턴
