@@ -61,14 +61,9 @@ author: 김동현
 관련 폴더 : [javascript](https://github.com/lewns2/Toy/tree/master/articles/javascript)
 
 - 내용
-  - 자바스크립트의 성장
-  - 데이터 타입과 변수
-  - 객체
-  - 함수
-  - 생성자 함수와 객체
-  - 스코프
   - 실행 컨텍스트
-  - this
+  - [콜백 함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/10.%20%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
+  - [클로저]()
 
 ## Java
 
