@@ -63,7 +63,8 @@ author: 김동현
 - 내용
   - 실행 컨텍스트
   - [콜백 함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/10.%20%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
-  - [클로저]()
+  - [클로저](https://github.com/lewns2/Toy/blob/master/articles/javascript/11.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
+  - [프로토타입](https://github.com/lewns2/Toy/blob/master/articles/javascript/12.%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
 
 ## Java
 
