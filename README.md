@@ -55,7 +55,7 @@ author: 김동현
 
 ## JavaScript와 힘수형 프로그래밍
 
-- ### JavScript
+- ### JavaScript
 
   - 실행 컨텍스트
   - [콜백 함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/10.%20%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
@@ -69,7 +69,7 @@ author: 김동현
   - 모나드
 
 - ### 예제 코드 모음
-  - [javascript](https://github.com/lewns2/Toy/tree/master/articles/javascript)
+  - [javascript-lab](https://github.com/lewns2/Toy/tree/master/javascript-lab)
 
 ## Java
 
