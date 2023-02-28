@@ -57,13 +57,14 @@ author: 김동현
 
 - ### JavaScript
 
-  - 실행 컨텍스트
+  - [함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/05.%20%ED%95%A8%EC%88%98.md)
+  - [실행 컨텍스트](https://github.com/lewns2/Toy/blob/master/articles/javascript/08.%20%EC%8B%A4%ED%96%89%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.md)
   - [콜백 함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/10.%20%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
   - [프로토타입](https://github.com/lewns2/Toy/blob/master/articles/javascript/12.%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
 
 - ### Funtional Programming
 
-  - 함수형 프로그래밍
+  - [함수형 프로그래밍 개요](https://github.com/lewns2/Toy/blob/master/articles/funtional-programming/fp.md)
   - [클로저](https://github.com/lewns2/Toy/blob/master/articles/javascript/11.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
   - 커링함수와 부분 적용 함수
   - 모나드
