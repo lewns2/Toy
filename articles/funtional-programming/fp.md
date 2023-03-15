@@ -86,6 +86,83 @@
 
 불변하다라는 의미는 한번 생성된 후에는 절대 바뀌지 않는 것을 뜻합니다.
 
+## 주목받고 있는 함수형 프로그래밍
+
+### 클래스형 컴포넌트에서 함수형 컴포넌트로!(this의 제거)
+
+리액트의 과거에는 클래스형 컴포넌트를 주로 사용했지만, 2019년 v16.8부터 함수형 컴포넌트에 리액트 훅을 지원하면서부터 함수형 컴포넌트와 훅을 함께 사용할 것을 권장하고 있습니다.
+
+클래스형과 함수형 컴포넌트의 역할은 동일하지만, 함수형 컴포넌트는 클래스형 컴포넌트보다 선언하기 편하고, 메모리 자원을 덜 사용한다는 장점이 있습니다. 과거에도 함수형 컴포넌트가 있었지만, state와 라이프사이클 API를 사용할 수 없다는 단점을 리액트 훅이 도입되면서 해결되었습니다.
+
+**예시) state의 변경**
+
+1. 클래스형 컴포넌트
+
+```java
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {someState:0};
+  }
+
+  methodOne(event) {
+		this.setState({ someState: this.state.someState + 1})
+  }
+
+  render() {
+    return (
+      // 이러면 에러가 난다.
+      <button onClick={this.methodOne}>Click me!</button>
+
+      // bind를 해야 되는데 왜 이런지 알려주려면 상당한 부가설명이 필요하다.
+      <button onClick={this.methodOne.bind(this)}>Click me!</button>
+    ) ;
+  }
+}
+```
+
+1. 함수형 컴포넌트
+
+```java
+const MyComponent = (props) => {
+  const [value, setValue] = useState(0)
+
+  const methodOne = (event) => setValue(value + 1)
+
+  return (
+    <button onClick={methodOne}>Click me!</button>
+  ) ;
+}
+```
+
+### Java8에서 함수형 프로그래밍 도입
+
+Java는 객체지향 프로그래밍 언어입니다. 그러나 Java는 함수형 프로그래밍과 비동기 논블로킹의 기능 도입을 위해 Java8부터 `Optional`과 `람다식`, NodeJS처럼 `비동기 논블로킹 방식`을 도입하게 됩니다.
+
+**예시 1)** **Java8의 StreamAPI**
+
+```java
+List<Integer> values = Arrays.asList(7, 5, 123, 5, 42, 95, 68, 30, 42);
+
+List<Integer> result = values.stream()
+    .filter(number -> number < 50)
+    .distinct()
+    .sorted(Integer::compare)
+    .collect(Collectors.toList());
+```
+
+**예시 2) Optional : 값이 존재할 수도, 존재하지 않을 수도 있는 값을 포장한 객체**
+
+Java는 `Optional`을 도입하여 “참조 값이 `Null`일 수도 있음”을 알려주고 이를 통해 `NullPointerException`을 방지합니다.
+
+자바로 개발을 하다보면 `NullPointerException`을 자주 마주하게 됩니다. 자바는 객체지향 프로그래밍의 참조형 자료에 `Null(존재하지 않는 값)`이라는 개념을 허용하고 있기 때문에 발생하는 문제입니다.
+
+어떻게 `Null`을 다루면 좋을 지에 대한 고민 중 해결책을 함수형 언어에서 찾았습니다. 함수형 언어는 존재하지 않을 수도 있는 값에 대한 별도의 타입을 가지고 있습니다.
+
+### 동시성 프로그래밍에 강점
+
+함수형 프로그래밍은 부수효과가 발생하지 않는 “참조 투명성”을 가졌기에 멀티코어 프로세스에서 교착상태에 빠지지 않는다는 장점이 있습니다. 이러한 특징으로 동시성 프로그래밍에서 강력한 프로그래밍 패러다임으로 작용합니다.
+
 ## 결론
 
 함수형 프로그래밍은,
