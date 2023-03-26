@@ -75,6 +75,10 @@ author: 김동현
 
 ## Java
 
+- ### 자바
+- 자바 기초
+- [자바 훑어보기](https://github.com/lewns2/Toy/blob/master/articles/java/basic.md)
+
 - ### 이펙티브 자바
 
   - 객체의 생성
