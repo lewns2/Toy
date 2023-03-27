@@ -8,6 +8,7 @@ author: 김동현
 2.  [Spring과 객체 지향 프로그래밍](#spring) <br>
 3.  [JavaScript와 함수형 프로그래밍](#javascript와-힘수형-프로그래밍) <br>
 4.  [Java](#java) <br>
+5.  [데이터베이스](#데이터베이스)<br>
 
 ## 프론트엔드 테스트
 
@@ -76,8 +77,9 @@ author: 김동현
 ## Java
 
 - ### 자바
-- 자바 기초
-- [자바 훑어보기](https://github.com/lewns2/Toy/blob/master/articles/java/basic.md)
+
+  - 자바 기초
+    - [자바 훑어보기](https://github.com/lewns2/Toy/blob/master/articles/java/basic.md)
 
 - ### 이펙티브 자바
 
@@ -87,3 +89,7 @@ author: 김동현
 
 - ### 예제 코드 모음
   - [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)
+
+## 데이터베이스
+
+- 트랜잭션
