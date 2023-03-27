@@ -92,4 +92,4 @@ author: 김동현
 
 ## 데이터베이스
 
-- 트랜잭션
+- [트랜잭션](https://github.com/lewns2/Toy/blob/master/articles/database/%1Ctransaction.md)
