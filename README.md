@@ -92,4 +92,5 @@ author: 김동현
 
 ## 데이터베이스
 
+- [정규화](https://github.com/lewns2/Toy/blob/master/articles/database/normalization.md)
 - [트랜잭션](https://github.com/lewns2/Toy/blob/master/articles/database/%1Ctransaction.md)
