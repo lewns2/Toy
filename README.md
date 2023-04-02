@@ -66,10 +66,10 @@ author: 김동현
 
 - ### 모던 자바스크립트 Deep Dive
 
-  - [01~02. 프로그래밍, 자바스크립트란?]()
-  - [04~05. 변수, 표현식과 문]()
-  - [06~07. 데이터 타입, 연산자]()
-  - [08~09. 제어문, 타입 변환과 단축 평가]()
+  - [01~02. 프로그래밍, 자바스크립트란?](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/01~02.%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%2C%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%9E%80%3F.md)
+  - [04~05. 변수, 표현식과 문](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/04~05.%20%EB%B3%80%EC%88%98%2C%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%EB%AC%B8.md)
+  - [06~07. 데이터 타입, 연산자](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/06~07.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85%2C%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
+  - [08~09. 제어문, 타입 변환과 단축 평가](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/08~09.%20%EC%A0%9C%EC%96%B4%EB%AC%B8%2C%20%ED%83%80%EC%9E%85%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%8B%A8%EC%B6%95%20%ED%8F%89%EA%B0%80.md)
 
 - ### Funtional Programming
 
