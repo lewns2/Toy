@@ -64,6 +64,13 @@ author: 김동현
   - [프로토타입](https://github.com/lewns2/Toy/blob/master/articles/javascript/12.%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
   - [자바스크립트의 메모리 누수](https://github.com/lewns2/Toy/blob/master/articles/javascript/13.%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%88%84%EC%88%98.md)
 
+- ### 모던 자바스크립트 Deep Dive
+
+  - [01~02. 프로그래밍, 자바스크립트란?]()
+  - [04~05. 변수, 표현식과 문]()
+  - [06~07. 데이터 타입, 연산자]()
+  - [08~09. 제어문, 타입 변환과 단축 평가]()
+
 - ### Funtional Programming
 
   - [함수형 프로그래밍 개요](https://github.com/lewns2/Toy/blob/master/articles/funtional-programming/fp.md)
