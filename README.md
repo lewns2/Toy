@@ -8,7 +8,8 @@ author: 김동현
 2.  [Spring과 객체 지향 프로그래밍](#spring) <br>
 3.  [JavaScript와 함수형 프로그래밍](#javascript와-힘수형-프로그래밍) <br>
 4.  [Java](#java) <br>
-5.  [데이터베이스](#데이터베이스)<br>
+5.  [자료구조와 알고리즘](#자료구조와-알고리즘)
+6.  [데이터베이스](#데이터베이스)<br>
 
 ## 프론트엔드 테스트
 
@@ -96,6 +97,8 @@ author: 김동현
 
 - ### 예제 코드 모음
   - [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)
+
+## 자료구조와 알고리즘
 
 ## 데이터베이스
 
