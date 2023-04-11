@@ -92,8 +92,12 @@ author: 김동현
 - ### 이펙티브 자바
 
   - 객체의 생성
+
     - [정적 팩토리 메서드 패턴](https://github.com/lewns2/Toy/blob/master/articles/java/static_factory_method.md)
     - [빌더 패턴](https://github.com/lewns2/Toy/blob/master/articles/java/builder.md)
+
+  - 클래스와 인터페이스
+    - [클래스와 멤버의 접근 권한 최소화]()
 
 - ### 예제 코드 모음
   - [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)
