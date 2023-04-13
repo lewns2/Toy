@@ -77,7 +77,7 @@ author: 김동현
   - [함수형 프로그래밍 개요](https://github.com/lewns2/Toy/blob/master/articles/funtional-programming/fp.md)
   - [클로저](https://github.com/lewns2/Toy/blob/master/articles/javascript/11.%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
   - 커링함수와 부분 적용 함수
-  - 모나드
+  - [모나드](https://github.com/lewns2/Toy/blob/master/articles/funtional-programming/monad.md)
 
 - ### 예제 코드 모음
   - [javascript-lab](https://github.com/lewns2/Toy/tree/master/javascript-lab)
@@ -97,7 +97,7 @@ author: 김동현
     - [빌더 패턴](https://github.com/lewns2/Toy/blob/master/articles/java/builder.md)
 
   - 클래스와 인터페이스
-    - [클래스와 멤버의 접근 권한 최소화]()
+    - [클래스와 멤버의 접근 권한 최소화하라](https://github.com/lewns2/Toy/blob/master/articles/java/class_member_access_level.md)
 
 - ### 예제 코드 모음
   - [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)

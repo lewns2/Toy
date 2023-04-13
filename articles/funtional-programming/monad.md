@@ -6,6 +6,8 @@
 
 > **모나드는 수학의 [범주론](https://namu.wiki/w/%EB%B2%94%EC%A3%BC%EB%A1%A0) (Category theory)에서 사용되는 개념을 가져와 사용하는 것이다. 사실 하스켈을 배우던 사람 중 상당수가 모나드를 수학적으로 이해하려다 멘붕 후 접는다고 봐도 될 정도로 개념적 이해까지의 난이도가 높다. 하지만, 애시당초 수학의 모나드와는 미묘하게 다른데다 실제 사용례 위주로만 습득해서만 써도 별 문제 없으며 쉽게 쓰라고 do 같은 문법도 지원해주므로 수학적인 개념이 이해가 안 간다고 그다지 난감해 할 것은 없다.**
 
+<br>
+
 **모나드 in ChatGPT**
 
 > **모나드는 함수형 프로그래밍에서 중요한 개념 중 하나입니다. 모나드는 값을 감싸고 그 값을 다루기 위한 일련의 규칙과 함수를 정의하는 디자인 패턴입니다.**
@@ -17,6 +19,8 @@
 > **Maybe 모나드는 값이 존재할 수도 있고, 존재하지 않을 수도 있는 경우에 사용됩니다. List 모나드는 값의 리스트를 다루는데 사용되며, IO 모나드는 입력 및 출력과 관련된 작업을 다룹니다.**
 >
 > **모나드를 사용하면 값의 추적과 관련된 문제를 해결할 수 있습니다. 이를 통해 코드의 안정성과 예측 가능성을 높일 수 있습니다.**
+
+<br>
 
 **“모나드 예시를 보여줘” in ChatGPT**
 
@@ -55,6 +59,8 @@
 >
 > 위 코드에서는 **`data`** 객체를 **`Maybe`** 모나드로 감싸고, **`map`** 함수를 사용하여 **`user`**, **`address`**, **`city`** 값을 추출합니다. 이때 **`Maybe`** 모나드는 **`null`** 또는 **`undefined`**인 경우에는 값을 추출하지 않고, **`null`** 값을 반환합니다.
 
+<br>
+
 ## map(), flatmap() 메서드
 
 ## map()
@@ -90,6 +96,8 @@ arr1.flatMap(x => [x * 2]); // [2, 4, 6, 8]
 
 ### **라고 이해하는 순간, 고통의 시작**
 
+<br>
+
 ## 모나드는 언제 필요한가?
 
 ### 비동기 연산 처리
@@ -110,15 +118,17 @@ Ajax를 통한 비동기 요청은 콜백 지옥을 야기한다.
 
 - 콜백 지옥 : 콜백 함수를 익명 함수로 전달하는 과정에서 또 다시 콜백 안에 함수 호출이 반복되어 코드의 들여쓰기 수준이 감당하기 힘들 정도로 깊어지는 현상
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/574a8436-3af2-43e9-aa28-dddc01aa30be/Untitled.png)
+![monad1](../image/monad1.png)
 
 비동기를 제어하는 방법(콜백 지옥 탈출)으로 **Promise**를 사용하거나, **async/await** 문법을 사용하는 방법이 있다. 이때 **Promise**가 모나드의 일종이다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c820f05b-af43-4b3a-8a14-2fe9a4d9af62/Untitled.png)
+![monad2](../image/monad2.png)
 
 - **pending** – 초기 상태이고 비동기 작업이 아직 완료되지 않았으며 결과를 알 수 없습니다.
 - **fulfilled** – 작업이 성공적으로 완료됨
 - **rejected** – 작업이 실패함.
+
+<br>
 
 ### Null 처리
 
@@ -197,6 +207,8 @@ console.log(collect); // [ 1, 4, 9 ]
 
 ### \* Functor를 이용하면, 일반적으로 모델링할 수 없는 상황을 모델링할 수 있다.
 
+<br>
+
 **Ex1) 값이 없는 케이스 :** Optional
 
 Functor - 값이 없는 케이스
@@ -216,6 +228,8 @@ Optional<Integer> optionInt = optionStr.map(Integer::parseInt);
 사용하는 쪽에서 null check가 불필요하다. null인 경우, 그냥 로직이 실행되지 않는다.
 
 또한 반환 타입이 항상 Optional로 감싸진 형태이다. 즉, 타입 안정성을 유지하면서 인코딩할 수 있다.
+
+<br>
 
 **Ex2) 값이 미래에 준비될 것으로 예상되는 케이스 :** Promise
 
@@ -246,17 +260,17 @@ const userAddressPromise = getUserById(userId).then((user) =>
 );
 ```
 
+<br>
+
 ## 모나드는 Functor에 flatMap()을 추가한 것
 
 ### Functor의 문제점
 
 Functor가 다시 Functor에 감싸져 있으면, 함수의 합성과 체이닝을 저해한다.
 
-모나드에서 **`flatMap`**은 중첩된 모나드를 평면화(flat)하여 다룰 수 있게 해주는 메소드입니다. 이를테면, **`flatMap`**을 사용하지 않는 경우, 중첩된 모나드에서 값을 추출하려면 중첩된 구조를 일일이 풀어줘야 합니다. 이
+모나드에서 `flatMap`은 중첩된 모나드를 평면화(flat)하여 다룰 수 있게 해주는 메소드입니다. 이를테면, `flatMap`을 사용하지 않는 경우, 중첩된 모나드에서 값을 추출하려면 중첩된 구조를 일일이 풀어줘야 합니다. 이는 코드를 복잡하게 만들 수 있습니다.
 
-는 코드를 복잡하게 만들 수 있습니다.
-
-예를 들어, 아래 코드는 **`Maybe`** 모나드에 값을 적용한 후, 추출한 값을 다시 **`Maybe`** 모나드에 전달하여 중첩된 구조를 만듭니다.
+예를 들어, 아래 코드는 `Maybe` 모나드에 값을 적용한 후, 추출한 값을 다시 `Maybe` 모나드에 전달하여 중첩된 구조를 만듭니다.
 
 ```tsx
 const maybeNum = new Maybe<number>(10);
@@ -274,6 +288,8 @@ const maybeDoubledAndWrapped = maybeNum.flatMap(
   (x) => new Maybe<number>(x * 2)
 ); // Just(20)
 ```
+
+<br>
 
 ## flatMap()
 
@@ -296,6 +312,8 @@ arr1.map((x) => x.split(" "));
 arr1.flatMap((x) => x.split(" "));
 // ["it's","Sunny","in","","California"]
 ```
+
+<br>
 
 **Functor**
 
@@ -320,6 +338,8 @@ const Maybe = (value) => ({
 다시 위의 Maybe 모나드를 살펴보면,
 
 map은 빈 값(null, undefined)인 경우, `Maybe(fn(value))`를 반환하지만, flatMap은 `fn(value)`를 반환한다.
+
+<br>
 
 ## 의의
 
