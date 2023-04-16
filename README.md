@@ -30,7 +30,7 @@ author: 김동현
 - ### 스프링의 삼각형
 
   - DI/IOC
-  - [AOP]()
+  - [AOP(Aspect-Oriented Programming)](https://github.com/lewns2/Toy/blob/master/articles/java/aop.md)
   - PSA
 
 - ### API
