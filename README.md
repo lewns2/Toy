@@ -27,6 +27,12 @@ author: 김동현
 
 ## Spring
 
+- ### 스프링의 삼각형
+
+  - DI/IOC
+  - [AOP]()
+  - PSA
+
 - ### API
 
   - [전반적인 API 설계 흐름 살펴보기](https://github.com/lewns2/Toy/blob/master/articles/spring-framework/api.md)
@@ -101,8 +107,6 @@ author: 김동현
 
 - ### 예제 코드 모음
   - [java-lab](https://github.com/lewns2/Toy/tree/master/java-lab)
-
-## 자료구조와 알고리즘
 
 ## 데이터베이스
 

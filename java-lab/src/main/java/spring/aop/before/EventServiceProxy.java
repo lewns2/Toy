@@ -1,10 +1,9 @@
 package spring.aop.before;
 
-/*
-TODO: 메서드 실행 시간 측정
-가장 naive한 방법
-* */
-public class SimpleEventService implements EventService{
+public class EventServiceProxy implements EventService{
+
+    private final EventServiceImpl baseSimpleEventService = new EventServiceImpl();
+
     @Override
     public void createEvent() {
         long beginTime = System.currentTimeMillis();
@@ -13,7 +12,7 @@ public class SimpleEventService implements EventService{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Created an event");
+        baseSimpleEventService.createEvent();
         System.out.println(System.currentTimeMillis() - beginTime);
     }
 
@@ -25,12 +24,12 @@ public class SimpleEventService implements EventService{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Published an event");
+        baseSimpleEventService.publishEvent();
         System.out.println(System.currentTimeMillis() - beginTime);
     }
 
     @Override
     public void deleteEvent() {
-        System.out.println("Deleted an event");
+        baseSimpleEventService.deleteEvent();
     }
 }
