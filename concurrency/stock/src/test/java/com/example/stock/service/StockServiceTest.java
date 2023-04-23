@@ -50,6 +50,9 @@ class StockServiceTest {
         int threadCount = 100;
         ExecutorService executorService = Executors.newFixedThreadPool(32);
 
+        Stock initStock = stockRepository.findById(1L).orElseThrow();
+        System.out.println("초기 수량 : " + initStock.getQuantity());
+
         // 100개의 요청이 끝날때까지 기다려야하므로
         // 다른 쓰레드에서 수행중인 작업이 완료될 때까지 대기할 수 있도록 도와준다.
         CountDownLatch latch = new CountDownLatch(threadCount);
@@ -69,6 +72,7 @@ class StockServiceTest {
         Stock stock = stockRepository.findById(1L).orElseThrow();
 
         // 100 - (1 * 100) = 0
+        System.out.println("남은 재고 수량 : " + stock.getQuantity());
         assertEquals(0L, stock.getQuantity());
 
         // * 레이스 컨디션으로 인한 테스트 실패
