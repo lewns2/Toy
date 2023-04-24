@@ -114,3 +114,4 @@ author: 김동현
 - [정규화](https://github.com/lewns2/Toy/blob/master/articles/database/normalization.md)
 - [트랜잭션](https://github.com/lewns2/Toy/blob/master/articles/database/%1Ctransaction.md)
 - [트랜잭션 격리 수준](https://github.com/lewns2/Toy/blob/master/articles/database/transaction-isoliation-level.md)
+- [인덱스]()
