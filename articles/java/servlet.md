@@ -2,7 +2,7 @@
 
 ## 정의
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/188e78b4-2d2f-480d-babd-ce5c2c918f5c/Untitled.png)
+![Untitled](../image/servlet1.png)
 
 자바 웹 서버로 웹 페이지를 제공할 때, 동적인 데이터를 제공하는 것을 도와주는 친구이다.
 
@@ -12,15 +12,15 @@
 
 ### 기존 CGI의 동작방식
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/723a0158-cdd3-4d58-9f6e-0112134cd9ce/Untitled.png)
+![Untitled](../image/servlet2.png)
 
 CGI는 브라우저에서 웹서버에 요청이 갔을 때, 각각에 대한 처리 프로세스를 만들어낸다는 단점이 있었다. 그래서 대량의 트래픽을 처리하기에는 약간 무리가 있었다.
 
 ### **서블릿의 동작방식**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bad31e6d-f019-4da8-abbb-9e53706a7e4b/Untitled.png)
+![Untitled](../image/servlet3.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b3801024-7269-4f0f-9c17-ae2ebb4eb211/Untitled.png)
+![Untitled](../image/servlet4.png)
 
 1. 개발자가 자바 서블릿 소스코드(`.java`)를 작성한다. (위에서는 스프링 프레임워크를 이용해 작성)
 2. 해당 자바 서블릿 소스가 빌드시 컴파일되며 서블릿 클래스(`.class`)가 된다.
@@ -33,6 +33,6 @@ CGI는 브라우저에서 웹서버에 요청이 갔을 때, 각각에 대한 �
 
 **스프링 서블릿의 상속 관계**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69c4b238-197e-4884-8478-0ea6950a9187/Untitled.png)
+![Untitled](../image/servlet5.png)
 
 위와 같은 상속 관계를 갖는다.`HttpServlet`까지는 `WAS`라 불리는 톰캣에서 구현되고, 스프링은 `WAS`로 부터 상속받은 `HttpServlet`을 이용하여 스프링에서 쓰이는 `Servlet`들을 구현한다.
