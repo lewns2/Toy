@@ -79,7 +79,7 @@ author: 김동현
   - [08~09. 제어문, 타입 변환과 단축 평가](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/08~09.%20%EC%A0%9C%EC%96%B4%EB%AC%B8%2C%20%ED%83%80%EC%9E%85%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%8B%A8%EC%B6%95%20%ED%8F%89%EA%B0%80.md)
   - [10~11. 객체 리터럴, 원시 값과 객체의 비교](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/10~11.%20%EA%B0%9D%EC%B2%B4%20%EB%A6%AC%ED%84%B0%EB%9F%B4%2C%20%EC%9B%90%EC%8B%9C%20%EA%B0%92%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EB%B9%84%EA%B5%90.md)
   - [12. 함수](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/12.%20%ED%95%A8%EC%88%98.md)
-  - [13~14. 스코프, 전역 변수의 문제점](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/13~14.%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%A0%84%EC%97%AD%20%EB%B3%80%EC%88%98%EC%9D%98%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)
+  - [13~14. 스코프,전역 변수의 문제점](https://github.com/lewns2/Toy/blob/master/articles/javascript/deep-dive/13~14.%20%EC%8A%A4%EC%BD%94%ED%94%84%2C%20%EC%A0%84%EC%97%AD%20%EB%B3%80%EC%88%98%EC%9D%98%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)
 
 - ### Funtional Programming
 
